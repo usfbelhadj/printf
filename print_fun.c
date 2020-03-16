@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+#include <stdarg.h>
 /**
  *
  *
@@ -37,7 +39,6 @@ void print_number(va_list arg)
 int x, j, i = 0, l, n, m, k = 1;
 l = va_arg(arg, int);
 if (l == NULL)
-return;
 m = l;
 else
 {
@@ -66,4 +67,20 @@ n = n % k;
 k /= 10;
 }
 }
+/**
+*_strlen- length of string
+*@s: string
+*Return: 1
+*/
+int _strlen(char *s)
+{
+int c = 0;
+while (*s != '\0')
+{
+c++;
+s++;
+}
+return (c);
+}
+
 }
