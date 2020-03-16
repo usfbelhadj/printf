@@ -9,12 +9,16 @@ va_start(arg, format);
 if (format == NULL)
 return (-1);
 for (i = 0; format[i] != '\0'; i++)
-if (format[i] == '%' || format[i + 1] == '%')
+if (format[i] == '%' && format[i + 1] == '%')
 {
 _putchar('%');
+c++;
 }
-else if (format[i] == '%' || format[i + 1])
+else if (format[i] == '%' && format[i + 1] == "")
+{
 continue;
+c++;
+}
 if (format[i] == '\0')
 {
 return(-1);
