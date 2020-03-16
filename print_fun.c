@@ -39,7 +39,10 @@ void print_number(va_list arg)
 int x, j, i = 0, l, n, m, k = 1;
 l = va_arg(arg, int);
 if (l == NULL)
+{
+_putchar('(null)');
 m = l;
+}
 else
 {
 if (l < 0)
@@ -67,6 +70,7 @@ n = n % k;
 k /= 10;
 }
 }
+}
 /**
 *_strlen- length of string
 *@s: string
@@ -81,6 +85,4 @@ c++;
 s++;
 }
 return (c);
-}
-
 }
