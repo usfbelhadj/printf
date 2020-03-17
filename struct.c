@@ -18,7 +18,7 @@ print check[] = {
 {NULL, NULL},
 };
 int i = 0;
-for(i = 0; check[i].sign != NULL ; i++)
+for (i = 0; check[i].sign != NULL ; i++)
 {
 if (*format == *(check[i].sign))
 break;
