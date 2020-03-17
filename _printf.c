@@ -3,10 +3,10 @@
 #include <stdarg.h>
 int _printf(const char *format, ...)
 {
-	int i = 0, c = 0;
-	va_list arg;
-	int (*print)(va_list);
-	va_start(arg, format);
+int i = 0, c = 0;
+va_list arg;
+int (*print)(va_list);
+va_start(arg, format);
 	if (format == NULL)
 		return (-1);
 	while (format[i] != '\0')
@@ -17,13 +17,11 @@ int _printf(const char *format, ...)
 			c++;
 			i++;
 		}
-		
 		if (format[i] == '%')
 		{
 			i++;
 			for (; format[i] == ' '; i++)
 				;
-			
 			if (format[i] == '\0')
 				return (c);
 			else
@@ -34,18 +32,16 @@ int _printf(const char *format, ...)
 					_putchar('%');
 					_putchar(format[i]);
 					c += 2;
-					i++;	
+					i++;
 				}
 				else
-				{	
+				{
 					c += print(arg);
 					i++;
-				}	
+				}
 			}
 		}
-		
-        
 	}
 	va_end(arg);
-	return(c);
+	return (c);
 }
