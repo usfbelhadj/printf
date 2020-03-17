@@ -1,6 +1,11 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdarg.h>
+/**
+ * _printf - Function That Print
+ * @format: string
+ * Return: what fuction return
+ */
 int _printf(const char *format, ...)
 {
 int i = 0, c = 0;
