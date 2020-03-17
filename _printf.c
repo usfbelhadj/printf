@@ -37,16 +37,16 @@ if (print == NULL)
 _putchar('%');
 _putchar(format[i]);
 c += 2;
-i++;	
+i++;
 }
 else
-{	
+{
 c += print(arg);
 i++;
-}	
+}
 }
 }
 }
 va_end(arg);
-return(c);
+return (c);
 }
