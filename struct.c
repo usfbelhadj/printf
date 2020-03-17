@@ -18,10 +18,10 @@ print check[] = {
 {NULL, NULL},
 };
 int i = 0;
-while (check[i].sign != NULL)
+for(i = 0; check[i].sign != NULL ; i++)
 {
 if (*format == *(check[i].sign))
-return (check[i].f);
-i++;
+break;
 }
+return (check[i].f);
 }
