@@ -1,6 +1,12 @@
 #ifndef _HOLBERTON_H
 #define _HOLBERTON_H
 #include <stdarg.h>
+/**
+ * print - print types.
+ * @sign:char types.
+ * @f: function.
+ *
+ */
 int _printf(const char *format, ...);
 typedef struct print
 {
