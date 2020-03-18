@@ -15,14 +15,14 @@ char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char m[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 ch = va_arg(arg, char *);
 if (ch == NULL)
-ch = "None";
+ch = "(None)";
 while (ch[i] != '\0')
 {
 for (j = 0; a[j]; j++)
 {
-if (ch[i] == a[j])
+if (a[j] == ch[i])
 {
-_putchar(m[i]);
+_putchar(m[j]);
 n++;
 break;
 }
