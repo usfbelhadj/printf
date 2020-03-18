@@ -10,5 +10,5 @@
 int print_pourcentage(va_list __attribute__((unused)) arg)
 {
 _putchar('%');
-return(1);
+return (1);
 }

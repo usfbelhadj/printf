@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
  * get_sign_func - sign function
- * @s: string
+ * @format: string
  * Return: integer
  */
 int (*get_sign_func(const char *format))(va_list)

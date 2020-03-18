@@ -3,9 +3,9 @@
 #include <stdarg.h>
 #include <unistd.h>
 /**
- *print_number- Function That Print Numbers
- *@arg: Input
- *Return: integer
+ * print_number - Function That Print Numbers
+ * @arg: Input
+ * Return: integer
  */
 int print_number(va_list arg)
 {
