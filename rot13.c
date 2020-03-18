@@ -1,5 +1,5 @@
 #include"holberton.h"
-#include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 /**
  * print_rot13 - rot13
@@ -8,13 +8,14 @@
  */
 int print_rot13(va_list arg)
 {
- unsigned int i = 0, j = 0, n = 0;
+ unsigned int i = 0, j = 0;
+ int n = 0;
 char *ch;
 char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char m[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 ch = va_arg(arg, char *);
 if (ch == NULL)
-return (-1);
+ch = "None";
 while (ch[i] != '\0')
 {
 for (j = 0; a[j]; j++)
@@ -31,6 +32,7 @@ if (!a[j])
 _putchar(ch[i]);
 n++;
 }
+i++;
 }
 return (n);
 }
