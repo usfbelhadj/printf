@@ -25,6 +25,7 @@ i++;
 if (format[i] == '%' && format[i + 1] == '\0')
 {
 _putchar('%');
+break;
 }
 if (format[i] == '%')
 {
