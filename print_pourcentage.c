@@ -8,10 +8,9 @@
  *
  *
  */
-int print_char(va_list arg)
+int print_pourcentage(va_list arg)
 {
-char c;
-c = va_arg(arg, int);
-_putchar(c);
+_putchar('%');
+(void *)arg;
 return(1);
 }

@@ -14,6 +14,7 @@ char *sign;
 int (*f)(va_list);
 } print;
 int _putchar(char c);
+int print_pourcentage(va_list arg);
 int print_char(va_list arg);
 int print_string(va_list arg);
 int print_number(va_list arg);

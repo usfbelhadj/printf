@@ -14,7 +14,7 @@ print check[] = {
 {"c", print_char},
 {"i", print_number},
 {"d", print_number},
-{"%", print_char},
+{"%", print_pourcentage},
 {NULL, NULL},
 };
 int i = 0;
