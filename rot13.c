@@ -8,8 +8,8 @@
  */
 int print_rot13(va_list arg)
 {
- unsigned int i = 0, j = 0;
- int n = 0;
+unsigned int i = 0, j = 0;
+int n = 0;
 char *ch;
 char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char m[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
