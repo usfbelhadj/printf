@@ -24,8 +24,7 @@ i++;
 }
 if (format[i] == '%' && format[i + 1] == '\0')
 {
-_putchar('%');
-break;
+_putchar('%' + '0');
 }
 if (format[i] == '%')
 {
