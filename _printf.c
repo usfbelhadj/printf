@@ -1,6 +1,18 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdarg.h>
+#define l22 {_putchar(format[i]);\
+c++;\
+i++;\
+}
+#define l43 {_putchar('%');\
+_putchar(format[i]);\
+c += 2;\
+i++;\
+}
+#define l50 {c += print(arg);\
+i++;\
+}
 /**
  * _printf - Function That Print
  * @format: string
@@ -17,11 +29,7 @@ return (-1);
 while (format[i] != '\0')
 {
 while (format[i] != '%' && format[i] != '\0')
-{
-_putchar(format[i]);
-c++;
-i++;
-}
+l22
 if (format[i] == '%' && format[i + 1] == '\0')
 {
 continue;
@@ -37,17 +45,9 @@ else
 {
 print = get_sign_func(&format[i]);
 if (print == NULL)
-{
-_putchar('%');
-_putchar(format[i]);
-c += 2;
-i++;
-}
+l43
 else
-{
-c += print(arg);
-i++;
-}
+l50
 }
 }
 }
