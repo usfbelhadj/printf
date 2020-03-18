@@ -16,6 +16,7 @@ print check[] = {
 {"d", print_number},
 {"%", print_pourcentage},
 {"r", print_reverse},
+{"R", print_rot13},
 {NULL, NULL},
 };
 int i = 0;
