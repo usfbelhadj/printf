@@ -41,8 +41,9 @@ i++;
 }
 else
 {
-i++;
+print = get_sign_func(&format[i]);
 c += print(arg);
+i++;
 }
 }
 }
