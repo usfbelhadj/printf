@@ -26,8 +26,11 @@ n++;
 break;
 }
 }
+if (!a[j])
+{
 _putchar(ch[i]);
 n++;
+}
 }
 return (n);
 }
