@@ -22,6 +22,10 @@ _putchar(format[i]);
 c++;
 i++;
 }
+if (format[i] == '%' && format[i] == '\0')
+{
+_putchar('%');
+}
 if (format[i] == '%')
 {
 i++;
