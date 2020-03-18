@@ -20,7 +20,7 @@ while (ch[i] != '\0')
 {
 for (j = 0; a[j]; j++)
 {
-if (a[j] == ch[i])
+if (ch[i] == a[j])
 {
 _putchar(m[j]);
 n++;
