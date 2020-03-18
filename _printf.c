@@ -35,14 +35,14 @@ print = get_sign_func(&format[i]);
 if (print == NULL)
 {
 _putchar('%');
+i++;
 _putchar(format[i]);
 c += 2;
-i++;
 }
 else
 {
-c += print(arg);
 i++;
+c += print(arg);
 }
 }
 }
