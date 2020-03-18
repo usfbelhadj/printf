@@ -10,8 +10,8 @@
  */
 int print_number(va_list arg)
 {
-  int nb, ddiv, num = 1, len = 0;
-
+  int num = 1, len = 0;
+  unsigned int ddiv, nb;
   nb = va_arg(arg, int);
   if (nb < 0)
     {
