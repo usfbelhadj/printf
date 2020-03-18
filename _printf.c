@@ -24,7 +24,7 @@ i++;
 }
 if (format[i] == '%' && format[i + 1] == '\0')
 {
-_putchar('%' + '0');
+_putchar('%');
 }
 if (format[i] == '%')
 {
@@ -45,6 +45,7 @@ i++;
 }
 else
 {
+print = get_sign_func(&format[i]);
 c += print(arg);
 i++;
 }
